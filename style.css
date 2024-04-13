@@ -12,6 +12,17 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* SIDEBAR */
 .sidebar {
   background-color: #6366f1;
@@ -151,8 +162,11 @@ body {
 }
 
 .content > div {
-  border: 1px solid white;
   padding-inline: 20px;
+}
+
+.content div h3 {
+  padding-block: 10px;
 }
 
 .content .projects-container {
@@ -196,4 +210,30 @@ body {
 
 .card img {
   width: 20px;
+}
+
+.announcement-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #c7d2fe;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.announcement {
+  flex: 1;
+  border-bottom: 2px solid #a5b4fc;
+  padding-block: 10px;
+}
+
+.announcement:last-child {
+  border: none;
+}
+
+.announcement p {
+  font-size: 0.9rem;
+}
+
+.announcement h4 {
+  font-size: 1rem;
 }
